@@ -2,10 +2,10 @@
 <style class="in-text" version="1.0" demote-non-dropping-particle="never" xmlns="http://purl.org/net/xbiblio/csl">
   <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>Chinese Std GB/T 7714-2005 (numeric, Chinese) - yet another implementation</title>
+    <title>Chinese Std GB/T 7714-2005 (numeric, Chinese) - yet another implementation - without access date and url</title>
     <title-short>GB/T 7714-2005 numeric</title-short>
-    <id>http://www.zotero.org/styles/chinese-std-gb-t-7714-2005-numeric-chinese-yet-another-implementation</id>
-    <link rel="self" href="http://www.zotero.org/styles/chinese-std-gb-t-7714-2005-numeric-chinese-yet-another-implementation"/>
+    <id>http://www.zotero.org/styles/chinese-std-gb-t-7714-2005-numeric-chinese-yet-another-implementation-without-access-date-and-url</id>
+    <link rel="self" href="http://www.zotero.org/styles/chinese-std-gb-t-7714-2005-numeric-chinese-yet-another-implementation-without-access-date-and-url"/>
     <link href="http://gradschool.ustc.edu.cn/ylb/material/xw/wdxz/19.pdf" rel="documentation"/>
     <link href="https://github.com/JunhuiJi/Chinese-Std-GB-T-7714-2005-numeric-Chinese" rel="documentation"/>
     <author>
@@ -17,7 +17,7 @@
     <category field="generic-base"/>
     <category field="science"/>
     <summary>This style just partly implemented what the Chinese GB/T 7714-2005 requires, used for Zotero.</summary>
-    <updated>2017-05-04T01:46:35+00:00</updated>
+    <updated>2017-05-04T01:59:41+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="author_title">
@@ -159,13 +159,17 @@
   <macro name="专著">
     <text macro="document-type-symbol"/>
     <text macro="secondary-author"/>
-    <text macro="edition_publication-item_page_access-date"/>
+    <text macro="edition"/>
+    <text macro="publication-item"/>
+    <text macro="page"/>
   </macro>
   <macro name="专著中的析出文献">
     <text macro="document-type-symbol"/>
     <text macro="secondary-author"/>
     <text macro="editor_title"/>
-    <text macro="edition_publication-item_page_access-date"/>
+    <text macro="edition"/>
+    <text macro="publication-item"/>
+    <text macro="page"/>
   </macro>
   <macro name="连续出版物中的析出文献">
     <text macro="document-type-symbol"/>
@@ -173,18 +177,19 @@
     <text macro="publication-year"/>
     <text variable="volume" prefix=", "/>
     <text variable="issue" prefix="(" suffix=")"/>
-    <text macro="page_access-date"/>
+    <text macro="page"/>
   </macro>
   <macro name="专利">
     <text macro="patent-country" prefix=": "/>
     <text variable="number" prefix=", "/>
     <text macro="document-type-symbol"/>
     <text macro="issue-date"/>
-    <text macro="page_access-date"/>
+    <text macro="page"/>
   </macro>
   <macro name="电子文献">
     <text macro="document-type-symbol"/>
     <text macro="access-date"/>
+    <text macro="access-url"/>
   </macro>
   <citation collapse="citation-number">
     <sort>
@@ -218,7 +223,6 @@
           <text value="不支持的Zotero文档类型"/>
         </else>
       </choose>
-      <text macro="access-url"/>
     </layout>
   </bibliography>
 </style>

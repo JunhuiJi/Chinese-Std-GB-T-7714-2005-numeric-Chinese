@@ -23,3 +23,5 @@
 ## 文档
 * 文后参考文献csl编写.xlsx：记录了支持的著录格式、文献类型及其他
 * 文后参考文献csl编写.xmind：XMind文件，记录了一些编写时的零碎
+## 关于多作者的“等”、“et al”问题
+* 感谢@specter119 在issue中提到的方案，参考https://zhuanlan.zhihu.com/p/53594081
